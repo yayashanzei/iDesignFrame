@@ -1,0 +1,14 @@
+html,body{padding:0px;margin:0px;font-family:微软雅黑,Tahoma,宋体;font-size:12px;overflow-y: auto;}
+a{text-decoration:none;}
+li{list-style:none;}
+
+.loginBackground{width:100%;height:100%;position:absolute;top:0px;margin:0px auto 0px;z-index:-2;}
+
+.loginContent{width:600px;height:400px;margin:10% auto;position:relative;border:3px solid #537BBE;border-radius: 5px;}
+.loginBack{width:100%;height:100%;position:absolute;z-index: -1;top:0px;left:0px;background:#fff;
+    border-radius: 6px;
+    opacity: 0.4;filter:alpha(opacity=40);}
+
+.nextLi{width:100%;text-align: center;}
+.nextLi button{width:60%;margin:0px;line-height:30px;background: #0e90d2;border:none;}
+.nextLi button:hover{background:#1f6377;}

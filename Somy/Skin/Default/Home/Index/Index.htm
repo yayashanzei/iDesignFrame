@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript" src="{$_STATIC}/Common/js/jquery1.8.3.easys.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            $('.ceshi').click(function () {
+                $.ajax({
+                    type: "post",
+                    cache: false,
+                    url: "{$_WWW}/ceshi",
+                    data: $("#ceshi").serialize(),
+                    dataType: "text",
+                    success: function (data) {
+                        alert(data);
+                    }
+                });
+            });
+        });
+
+    </script>
+
+    <style type="text/css">
+        body { background: #eee; }
+        #ice1 { font-size: 13px; }
+        .ice1 { font-size: 16px; }
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html;charset={$Charset}"/>
+    <title>无标题文档</title>
+</head>
+<body>
+
+<div id="ice1">{$title} -----{$name}</div>
+{if($title=='9ceshi')}
+--------
+eeee
+--------
+{/if}
+<div class="ice1">div</div>
+
+<form action="/upload" enctype="multipart/form-data" method="post">
+    <input type="text" name="name"/>
+    <input type="file" name="photo"/>
+    <input type="submit" value="提交">
+</form>
+
+<form action="" method="post" id="ceshi">
+    <input name="name" value="xiaojing" type="hidden"/>
+    <input name="title" value="xiaojing2" type="hidden"/>
+
+    <div class="ceshi" style="width:60px;height:30px;line-height:30px;border:1px solid #f00;">ceshi</div>
+</form>
+
+</body>
+</html>
