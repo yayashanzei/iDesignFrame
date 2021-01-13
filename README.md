@@ -1,2 +1,2 @@
 # iDesignFrame
-A PHP framework I've practiced myself is similar to thinkphp. The core functionality has been implemented, and the peripheral parts, such as log/cache, use ThinkPHP
+一个练手的类似thinkphp的框架，实现配置/自动加载/路由/模板等核心部分
